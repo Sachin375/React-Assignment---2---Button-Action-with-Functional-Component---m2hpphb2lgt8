@@ -6,8 +6,8 @@ function Home() {
   }
   return (
     <div>
-    <p>{data}</p>
-      <button onClick={shoot}>Take the Shot!</button>
+    <p id="para">{data}</p>
+      <button onClick={shoot} id="click">Take the Shot!</button>
     </div>
   )
 }
