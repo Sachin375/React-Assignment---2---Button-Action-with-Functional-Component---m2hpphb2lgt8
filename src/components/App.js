@@ -1,26 +1,21 @@
 import React, {Component, useState} from "react";
-import '../styles/App.css';
-
-class App extends Component {
-    constructor(props) {
-		super(props);
-	    this.state = {
-	    text: "Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy",
-		    click : 0
-	    
-	    }
-	};
-
-    render() {
-    	return(
-    		<div id="main">
-				{ /* Do not remove this main div!! */ }
-	<button id="click" onClick={() => this.setState({count: this.state.count + 1 })}>Button</button>
-    <h6 id="para">{this.state.text}</h6>
-    		</div>
-    	);
-    }
+import "./../styles/App.css";
+function App() {
+  
+  const [data, setData] = useState();
+  const shoot = () => {
+    setData("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy");
+  }
+  
+  return (
+    <div id="main">
+      <button id="click" onClick={shoot}>click</button>
+       {data !== "" ? <p id="para">{data}</p> : null}
+    </div>
+  );
 }
 
 
 export default App;
+
+
