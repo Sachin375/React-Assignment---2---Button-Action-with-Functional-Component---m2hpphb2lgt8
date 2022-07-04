@@ -9,8 +9,8 @@ function App() {
   
   return (
     <div id="main">
-    <p id="para">{data}</p>
       <button id="click" onClick={shoot}>click</button>
+      <p id="para">{data}</p>
     </div>
   );
 }
