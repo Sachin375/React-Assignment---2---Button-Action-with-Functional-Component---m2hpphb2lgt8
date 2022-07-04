@@ -4,7 +4,6 @@ import Home from "./Home";
 function App() {
   return (
     <div id="main">
-      // Do not alter the main div
     <Home/>
     </div>
   );
