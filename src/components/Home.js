@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function Home() {
-  const [data, setData] = useState();
+  const [data, setData] = useState("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy");
   const shoot = () => {
     setData("Hello, I've learnt to use the full-stack evaluation tool. This makes me so happy");
   }
