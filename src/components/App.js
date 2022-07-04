@@ -10,7 +10,7 @@ function App() {
   return (
     <div id="main">
       <button id="click" onClick={shoot}>click</button>
-       {data !== null ? <p id="para">{data}</p> : null}
+       {data !== "" ? <p id="para">{data}</p> : null}
     </div>
   );
 }
